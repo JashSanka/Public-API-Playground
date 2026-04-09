@@ -1,0 +1,40 @@
+import React from 'react';
+import './App.css';
+import DogFinder from './components/DogFinder';
+import JokeGenerator from './components/JokeGenerator';
+import RandomUserProfile from './components/RandomUserProfile';
+import JsonPlaceholderDemo from './components/JsonPlaceholderDemo';
+
+function App() {
+  return (
+    <div className="app-container">
+      <header className="app-header">
+        <h1 className="app-title text-gradient">Public API Playground</h1>
+        <p className="app-subtitle">
+          Explore and test various public APIs in one cohesive, premium interface.
+          From random dogs to user profiles, discover what these endpoints have to offer.
+        </p>
+      </header>
+
+      <main className="api-grid">
+        <DogFinder />
+        <JokeGenerator />
+        <RandomUserProfile />
+        <JsonPlaceholderDemo />
+      </main>
+
+      <footer style={{ 
+        marginTop: '4rem', 
+        padding: '2rem 0', 
+        textAlign: 'center', 
+        color: 'var(--color-text-secondary)',
+        borderTop: '1px solid var(--color-border)',
+        fontSize: '0.9rem'
+      }}>
+        Built with ❤️ for the Public API Playground Task
+      </footer>
+    </div>
+  );
+}
+
+export default App;
