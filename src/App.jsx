@@ -5,7 +5,7 @@ import CatFinder from './components/CatFinder';
 import RandomUserProfile from './components/RandomUserProfile';
 import JsonPlaceholderDemo from './components/JsonPlaceholderDemo';
 import QuoteGenerator from './components/QuoteGenerator';
-import CountryExplorer from './components/CountryExplorer';
+import CatFacts from './components/CatFacts';
 
 function App() {
   return (
@@ -14,14 +14,14 @@ function App() {
         <h1 className="app-title text-gradient">Public API Playground</h1>
         <p className="app-subtitle">
           Explore and test various public APIs in one cohesive, premium interface.
-          From random pets and quotes to global data and user profiles.
+          From random pets and quotes to fascinating facts and user profiles.
         </p>
       </header>
 
       <main className="api-grid">
         <DogFinder />
         <CatFinder />
-        <CountryExplorer />
+        <CatFacts />
         <QuoteGenerator />
         <RandomUserProfile />
         <JsonPlaceholderDemo />
