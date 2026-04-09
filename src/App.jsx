@@ -1,9 +1,11 @@
 import React from 'react';
 import './App.css';
 import DogFinder from './components/DogFinder';
-import JokeGenerator from './components/JokeGenerator';
+import CatFinder from './components/CatFinder';
 import RandomUserProfile from './components/RandomUserProfile';
 import JsonPlaceholderDemo from './components/JsonPlaceholderDemo';
+import QuoteGenerator from './components/QuoteGenerator';
+import CountryExplorer from './components/CountryExplorer';
 
 function App() {
   return (
@@ -12,13 +14,15 @@ function App() {
         <h1 className="app-title text-gradient">Public API Playground</h1>
         <p className="app-subtitle">
           Explore and test various public APIs in one cohesive, premium interface.
-          From random dogs to user profiles, discover what these endpoints have to offer.
+          From random pets and quotes to global data and user profiles.
         </p>
       </header>
 
       <main className="api-grid">
         <DogFinder />
-        <JokeGenerator />
+        <CatFinder />
+        <CountryExplorer />
+        <QuoteGenerator />
         <RandomUserProfile />
         <JsonPlaceholderDemo />
       </main>
